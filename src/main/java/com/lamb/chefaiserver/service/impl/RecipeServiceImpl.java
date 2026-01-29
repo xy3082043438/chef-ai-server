@@ -184,7 +184,7 @@ public class RecipeServiceImpl extends ServiceImpl<RecipeMapper, Recipe> impleme
                 new LambdaQueryWrapper<RecipeImage>().in(RecipeImage::getMenuId, menuIds)
         );
         Map<Integer, String> imageMap = images.stream()
-                .collect(Collectors.toMap(RecipeImage::getMenuId, RecipeImage::getImageUrl, (a, _) -> a));
+                .collect(Collectors.toMap(RecipeImage::getMenuId, RecipeImage::getImageUrl, (a, b) -> a));
 
         List<Map<String, Object>> result = list.stream().map(recipe -> {
             Map<String, Object> item = new HashMap<>();

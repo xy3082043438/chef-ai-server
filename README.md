@@ -4,7 +4,7 @@
 
 ## 环境要求
 
-- JDK 25
+- JDK 21+
 - MySQL 8.x
 - Maven Wrapper（已包含 `mvnw` / `mvnw.cmd`）
 
