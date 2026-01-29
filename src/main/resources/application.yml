@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: chef-ai-server
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/chef_ai
+    username: root
+    password: xiaoyang
+  ai:
+    openai:
+      base-url: https://api.xiaomimimo.com
+      api-key: ${XIAOMIMIMO_API_KEY}
+      chat:
+        options:
+          model: mimo-v2-flash
+      image:
+        base-url: https://api.siliconflow.cn
+        api-key: ${SILICONFLOW_API_KEY}
+        options:
+          model: Qwen/Qwen-Image
