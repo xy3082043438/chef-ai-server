@@ -1,6 +1,6 @@
 # chef-ai-server
 
-Spring Boot 4 服务端项目。
+「智能菜谱助手」后端服务（Spring Boot 4）。为前端提供用户体系、偏好/库存管理、菜谱推荐与详情等 API。
 
 ## 环境要求
 
@@ -29,6 +29,6 @@ macOS / Linux:
 ./mvnw spring-boot:run
 ```
 
-## License
+## 许可证
 
 MIT License，见 `LICENSE.md`。
